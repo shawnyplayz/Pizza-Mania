@@ -16,7 +16,7 @@ export default class Main extends Component {
                 <Route exact path="/" >
                   <Home />
                 </Route>
-                <Route path="/anime" >
+                <Route path="/piz" >
                   <Home />
                 </Route>
               </Switch >
