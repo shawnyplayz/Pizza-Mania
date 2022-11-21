@@ -1,0 +1,30 @@
+p {
+  margin: 0;
+}
+
+.wrap-btns {
+  display: flex;
+}
+
+.my-pad {
+  margin-left: 6px;
+}
+
+.wrap-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrap-discount {
+  display: flex;
+}
+
+.wrap-total {
+  float: right;
+}
+
+.secondBox {
+  border: 1px solid;
+}
