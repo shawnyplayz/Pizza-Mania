@@ -84,11 +84,16 @@ export class Home extends Component {
                                     type="checkbox"
                                     disabled={this.state.pizza === 0 ? true : false}
                                     value={this.state.addOn}
-                                    onClick={() =>
-                                      // this.checked
-                                      this.setState(prevState => ({
+                                    onClick={async () => {
+                                      await this.setState(prevState => ({
                                         addOn: !prevState.addOn
                                       }))
+                                      await this.setState({
+                                        total: this.state.addOn ? this.state.total + 5 : this.state.total
+                                      })
+                                    }
+                                      // this.checked
+
                                     }
                                     checked={this.state.addOn}
 
