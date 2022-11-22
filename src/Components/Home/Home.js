@@ -89,7 +89,7 @@ export class Home extends Component {
                                         addOn: !prevState.addOn
                                       }))
                                       await this.setState({
-                                        total: this.state.addOn ? this.state.total + 5 : this.state.total
+                                        total: this.state.addOn ? this.state.total + 5 : this.state.total - 5
                                       })
                                     }
                                       // this.checked
